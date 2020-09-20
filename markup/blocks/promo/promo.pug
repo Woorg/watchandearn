@@ -1,0 +1,342 @@
+mixin promo(data)
+    section.promo
+        .promo__container.container
+            h2.promo__title.title Today
+
+        .promo__videos
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #1
+                        .video__price $0.82
+                    picture.video__preview
+                        source(src-set="assets/images/content/video-img-1.webp" type="image/webp")
+                        img(src="assets/images/content/video-img-1.jpg", alt="")
+                        != pugHelpers.Icon.call(locals, {iconName: 'video-play-icon', className: 'video__play-icon'})
+                    .video__bottom
+                        .video__button.button Join to earn $0.82
+
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #2
+                        .video__price $0.77
+                    picture.video__preview
+                        source(src-set="assets/images/content/video-img-2.webp" type="image/webp")
+                        img(src="assets/images/content/video-img-2.jpg", alt="")
+                        != pugHelpers.Icon.call(locals, {iconName: 'video-play-icon', className: 'video__play-icon'})
+                    .video__bottom
+                        .video__button.button Join to earn $0.77
+
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #3
+                        .video__price $0.98
+                    picture.video__preview
+                        source(src-set="assets/images/content/video-img-3.webp" type="image/webp")
+                        img(src="assets/images/content/video-img-3.jpg", alt="")
+                        != pugHelpers.Icon.call(locals, {iconName: 'video-play-icon', className: 'video__play-icon'})
+                    .video__bottom
+                        .video__button.button Join to earn $0.98
+
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #4
+                        .video__price $0.62
+                    picture.video__preview
+                        source(src-set="assets/images/content/video-img-4.webp" type="image/webp")
+                        img(src="assets/images/content/video-img-4.jpg", alt="")
+                        != pugHelpers.Icon.call(locals, {iconName: 'video-play-icon', className: 'video__play-icon'})
+                    .video__bottom
+                        .video__button.button Join to earn $0.77
+
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #5
+                        .video__price $0.49
+                    picture.video__preview
+                        source(src-set="assets/images/content/video-img-5.webp" type="image/webp")
+                        img(src="assets/images/content/video-img-5.jpg", alt="")
+                        != pugHelpers.Icon.call(locals, {iconName: 'video-play-icon', className: 'video__play-icon'})
+                    .video__bottom
+                        .video__button.button Join to earn $0.49
+
+
+
+mixin promo-second(data)
+    section.promo
+
+        .promo__videos
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #1
+                        .video__price $0.77
+                    picture.video__preview
+                        iframe.video__iframe(src="https://www.youtube.com/embed/bdpYpulGCKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                    .video__bottom
+                        .video__text Play video to get money
+
+                        //- .video__button.button Join to earn $0.82
+
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #1
+                        .video__price $0.77
+                    picture.video__preview
+                        iframe.video__iframe(src="https://www.youtube.com/embed/bdpYpulGCKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                    .video__bottom
+                        .video__button.button Get money
+
+            article.promo__video.video
+                a.video__link(href="#register").container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'video__title-icon'})
+                            | Promo video #1
+                        .video__price $0.77
+                    picture.video__preview
+                        iframe.video__iframe(src="https://www.youtube.com/embed/bdpYpulGCKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                    .video__bottom
+                        .video__timer
+                            .video__timer-text Get money after 14 seconds
+                            .video__timer-w
+                                .video__timer-area(style="width: 72%")
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'allow-icon', className: 'video__title-icon'})
+                            | Allow video
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Go to <br/>website
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Click <br/>“Allow”
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        a.video__button.video__button_second.button.flex(href="#") Go to website
+
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'allow-icon', className: 'video__title-icon'})
+                            | Allow video
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Go to <br/>website
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Click <br/>“Allow”
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        .video__button.video__button_second.button.flex Go to website
+
+                        .video__spinner-w.flex
+                            .video__spinner
+                            .video__spinner-text Click “Allow” get money
+
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'allow-icon', className: 'video__title-icon'})
+                            | Allow video
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Go to <br/>website
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Click <br/>“Allow”
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        a.video__button.video__button_third.button.flex(href="#") Get money
+
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'partner-icon', className: 'video__title-icon'})
+                            | Dating partner
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Go to <br/>website
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Register
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        a.video__button.video__button_second.button.flex(href="#") Go to website
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'partner-icon', className: 'video__title-icon'})
+                            | Free lottery
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Go to <br/>website
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Register
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        a.video__button.video__button_second.button.flex(href="#") Go to website
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'partner-icon', className: 'video__title-icon'})
+                            | Install browser
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Install <br/>browser
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Register <br/>in browser
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        a.video__button.video__button_second.button.flex(href="#") Go to website
+
+            article.promo__video.video
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'partner-icon', className: 'video__title-icon'})
+                            | Are you human?
+                        .video__price $0.77
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Go to <br/>site
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Solve <br/>captcha
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        a.video__button.video__button_second.button.flex(href="#") Go to website
+
+            article.promo__video.video.video_partner
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'fellow-icon', className: 'video__title-icon'})
+                            | Get $1 for every friend
+                        .video__price $1
+                    .video__actions.flex
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'goto-icon', className: 'video__action-icon'})
+                            .video__action-text Share <br/>link
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'click-icon', className: 'video__action-icon'})
+                            .video__action-text Invite <br/>people
+
+                        a.video__action.flex(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'money-icon', className: 'video__action-icon'})
+                            .video__action-text Get <br/>money
+
+                    .video__bottom
+                        ul.video__list
+                            li.video__list-item 💡 Make <span>YouTube & TikTok</span> video
+                            li.video__list-item 💡 Post to <span>Facebook & Instagram</span>
+                            li.video__list-item 💡 Send link to <span>WhatsApp & Viber</span>
+
+
+                        .video__refferal
+                            .video__refferal-text Your refferal link:
+                            a.video__refferal-link(href="#") http://tubwin.com/?r=54228
+
+
+                        .video__note You invited 0 people and earned $0
+
+            article.promo__video.video.video_human
+                .video__link.container
+                    .video__top.flex
+                        .video__title.flex
+                            != pugHelpers.Icon.call(locals, {iconName: 'partner-icon', className: 'video__title-icon'})
+                            | Are you human?
+
+                    .video__bottom
+                        .video__text This task available after 20 hours 35 minutes

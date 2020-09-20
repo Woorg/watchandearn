@@ -1,0 +1,33 @@
+mixin withdraw(data)
+    section.withdraw
+        .withdraw__container.container
+            h1.withdraw__title.title Withdraw
+            form.withdraw__form.form(action="" method="post")
+                fieldset.form__fieldset
+                    legend.form__legend Payment method:
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="pay" checked)
+                        .form__checkbox-text WebMoney
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="pay" )
+                        .form__checkbox-text Bank Card
+
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="pay" )
+                        .form__checkbox-text PayPal
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="pay" )
+                        .form__checkbox-text AliPay
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="pay" )
+                        .form__checkbox-text Western Union
+
+
+                fieldset.form__fieldset
+                    legend.form__legend Withdraw amount:
+
+                    .form__field.flex
+                        input.form__input(type="text" name="" value="" placeholder="100")
+                        .form__note Min withdraw $80
+
+                input.form__submit.button(type="submit" value="Withdraw")

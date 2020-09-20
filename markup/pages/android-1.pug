@@ -1,0 +1,54 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header/header.pug
+  include ../blocks/footer/footer.pug
+
+  include ../blocks/hero/hero.pug
+  include ../blocks/blockquote/blockquote.pug
+  include ../blocks/promo/promo.pug
+  include ../blocks/top/top.pug
+  include ../blocks/about/about.pug
+
+
+  head
+    +head(head.android_1)
+  body.page
+    //- picture.page__bg
+    //-   img.lazy(data-src="assets/images/general/top-bg.png", alt="")
+    |%=symbols=%
+
+    +header()
+    .page__inner
+      +hero()
+      +blockquote()
+      +promo()
+      +top()
+      +about()
+
+    .page__bottom
+      +footer()
+
+    //- script(src="//api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
+    //- script(src='%=static=%js/separate-js/modernizr-custom.js' defer)
+    //- script(src='%=static=%js/separate-js/lazyload.min.js' defer)
+    //- script(src='%=static=%js/separate-js/jquery.min.js' defer)
+    //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js' defer)
+    //- script(src='%=static=%js/main%=hash=%%=min=%.js' defer)
+
+    //- script.
+    //-   window.onload = function(){
+    //-     let loc = document.getElementById("1989865eba94e899c7d");
+    //-     loc.value = window.location.href;
+    //-     let ref = document.getElementById("1989865eba94e899c7dref");
+    //-     ref.value = document.referrer;
+    //-   }
+
+    //- script.
+    //-   window.onload = function(){
+    //-     let statUrl = "https://design.viceverso.ru/stat/counter?ref=" + encodeURIComponent(document.referrer)
+    //-       + "&loc=" + encodeURIComponent(document.location.href);
+    //-     document.getElementById('gccounterImgContainer').innerHTML
+    //-       = "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
+    //-   }

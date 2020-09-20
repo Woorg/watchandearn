@@ -1,0 +1,12 @@
+mixin about(data)
+    .about
+        .about__container.container
+            != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'about__icon'})
+            .about__text Most popular spot to earn <br/>online by watching videos.
+            a.about__button.button(href="#") Create account
+
+mixin about-second(data)
+    .about.about_second
+        .about__container.container
+            != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'about__icon'})
+            .about__text Most popular spot to earn <br/>online by watching videos.

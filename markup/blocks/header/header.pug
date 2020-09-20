@@ -1,0 +1,55 @@
+mixin header(data)
+  header.header
+    .header__container.container.flex
+      a.header__logo(href="#")
+        != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'header__logo-icon'})
+      .header__auth
+        a.header__auth-link(href="#") Log In
+        a.header__auth-link.header__auth-link_active(href="#") Join
+
+mixin header-nav(data)
+  header.header
+    .header__container.container.flex
+      a.header__logo(href="#")
+        != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'header__logo-icon'})
+
+      .header__w
+        nav.header__nav.nav.nav_second
+          label.nav__button(for="nav-checkbox")
+            != pugHelpers.Icon.call(locals, {iconName: 'nav-button-icon', className: 'nav__button-icon'})
+          input#nav-checkbox.nav__checkbox(type="checkbox")
+
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") Home
+            li.nav__item
+              a.nav__link(href="#") Profile
+            li.nav__item
+              a.nav__link(href="#") Withdraw
+            li.nav__item
+              a.nav__link(href="#") Log Out
+
+
+mixin header-nav-balance(data)
+  header.header
+    .header__container.container.flex
+      a.header__logo(href="#")
+        != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'header__logo-icon'})
+
+      .header__w
+        .header__balance $145.00
+        .header__nav
+      nav.header__nav.nav.nav_second
+        label.nav__button(for="nav-checkbox")
+          != pugHelpers.Icon.call(locals, {iconName: 'nav-button-icon', className: 'nav__button-icon'})
+        input#nav-checkbox.nav__checkbox(type="checkbox")
+
+        ul.nav__list
+          li.nav__item
+            a.nav__link(href="#") Home
+          li.nav__item
+            a.nav__link(href="#") Profile
+          li.nav__item
+            a.nav__link(href="#") Withdraw
+          li.nav__item
+            a.nav__link(href="#") Log Out

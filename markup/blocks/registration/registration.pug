@@ -1,0 +1,42 @@
+mixin registration(data)
+    section.registration
+        .registration__container.container
+            h2.registration__title.title Registration
+            form.registration__form.form(action="")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="First name")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="Last name")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="Birthday")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="Email")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="Password")
+
+                .form__row.form__row_radio.flex
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="male" checked)
+                        .form__checkbox-text Male
+
+                    label.form__field.form__field_radio.flex
+                        input.form__checkbox(type="radio" name="gender" value="female")
+                        .form__checkbox-text Female
+
+                .form__privacy By Creating An Account You Are Agreeing To Our
+                    a.form__privacy-link(href="#privacy") Privacy Policy And Terms Of Service.
+
+                input.form__submit.button.flex(type="submit" value='Create account')
+
+
+mixin registration-login(data)
+    section.registration.registration_login
+        .registration__container.container
+            h2.registration__title.title Log in
+            form.registration__form.form(action="")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="Email")
+                .form__field.flex
+                    input.form__input(type="text", name="", value="", placeholder="Password")
+
+                input.form__submit.button.flex(type="submit" value='Log in')

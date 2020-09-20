@@ -1,0 +1,22 @@
+mixin hero(data)
+    section.hero
+        .hero__container.container
+            h1.hero__title.title
+                span.hero__title-text Watch and earn!
+            ul.hero__list
+                li.hero__item.flex
+                    span.hero__item-text
+                        != pugHelpers.Icon.call(locals, {iconName: 'check-icon', className: 'hero__icon'})
+                        | Up to $7/day
+                li.hero__item.flex
+                    span.hero__item-text
+                        != pugHelpers.Icon.call(locals, {iconName: 'check-icon', className: 'hero__icon'})
+                        | Daily tasks
+                li.hero__item.flex
+                    span.hero__item-text
+                        != pugHelpers.Icon.call(locals, {iconName: 'check-icon', className: 'hero__icon'})
+                        | Invite & earn!
+
+            picture.hero__image
+                source(src-set="assets/images/general/hero-img.webp" type="image/webp")
+                img(src="assets/images/general/hero-img.jpg", alt="")
